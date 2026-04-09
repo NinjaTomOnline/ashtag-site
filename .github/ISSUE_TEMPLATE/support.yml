@@ -1,0 +1,67 @@
+name: AshTag Support Request
+description: Report a bug or ask for help with the public AshTag release.
+title: "[Support] "
+labels:
+  - support
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: What part of AshTag needs help?
+      options:
+        - Install or update
+        - Cloud Sync
+        - Cigarette or craving logging
+        - Widgets or Live Activity
+        - Apple Watch
+        - Import or export
+        - Location or hotspot map
+        - Health heart-rate attachment
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Device model, for example iPhone 16 Pro Max or iPad mini.
+      placeholder: iPhone 16 Pro Max
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: OS version
+      description: iOS or watchOS version involved in the issue.
+      placeholder: iOS 26.5
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: AshTag version and build
+      description: The version shown in AshTag, for example 1.0 (2).
+      placeholder: 1.0 (2)
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      placeholder: Tell us what you expected AshTag to do.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+      placeholder: Tell us what AshTag did instead, including any visible error or sync state.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra detail
+      description: Include screenshots, Sync Status details, or the steps that reproduced it.
+      placeholder: Add any extra context here.
