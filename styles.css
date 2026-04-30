@@ -576,13 +576,25 @@ li {
 .page-hero-panel {
   max-width: 58rem;
   padding: 34px;
+  color: #fffaf2;
+  border-color: rgba(116, 234, 210, 0.24);
   background:
-    linear-gradient(135deg, rgba(223, 243, 235, 0.82), rgba(255, 255, 255, 0.95)),
-    var(--surface);
+    linear-gradient(135deg, rgba(14, 29, 25, 0.98), rgba(21, 63, 52, 0.94) 64%, rgba(13, 27, 22, 0.98)),
+    var(--forest);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.18);
+}
+
+.page-hero-panel .eyebrow {
+  color: var(--mint-bright);
 }
 
 .page-hero-panel h1 {
+  color: #fffaf2;
   font-size: 3.35rem;
+}
+
+.page-hero-panel .hero-copy {
+  color: rgba(255, 250, 242, 0.82);
 }
 
 .page-stack {
@@ -594,10 +606,31 @@ li {
 .page-panel,
 .callout {
   padding: 26px;
+  color: #fffaf2;
+  border-color: rgba(116, 234, 210, 0.2);
+  background:
+    linear-gradient(135deg, rgba(14, 29, 25, 0.97), rgba(18, 48, 40, 0.94)),
+    var(--forest);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
 }
 
-.callout {
-  background: linear-gradient(135deg, #ffffff, var(--blue-soft));
+.page-panel h2,
+.callout h2 {
+  color: #fffaf2;
+}
+
+.page-panel p,
+.page-panel li,
+.callout p,
+.callout li,
+.callout .small-note {
+  color: rgba(255, 250, 242, 0.82);
+}
+
+.page-panel a:not(.button):not(.button-secondary):not(.button-muted),
+.callout a:not(.button):not(.button-secondary):not(.button-muted) {
+  color: #fffaf2;
+  text-decoration-color: rgba(116, 234, 210, 0.58);
 }
 
 .page-panel ul,
