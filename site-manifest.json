@@ -1,0 +1,16 @@
+{
+  "name": "Ashtag",
+  "tagline": "A compact project site for tag-driven organization.",
+  "category": "Tool",
+  "status": "Live",
+  "website": "https://quitgentle.com/",
+  "supportUrl": "",
+  "privacyUrl": "",
+  "appStoreUrl": "",
+  "icon": "https://raw.githubusercontent.com/NinjaTomOnline/ashtag-site/main/assets/ashtag-icon.svg",
+  "previewImage": "https://raw.githubusercontent.com/NinjaTomOnline/ashtag-site/main/assets/screenshots/ashtag-today-marketing.png",
+  "previewImageAlt": "Ashtag project preview",
+  "accent": "#FF6FA8",
+  "featured": false,
+  "sortOrder": 230
+}
