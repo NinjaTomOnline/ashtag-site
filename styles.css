@@ -5,12 +5,17 @@
   --surface: #ffffff;
   --surface-soft: #f8fbf8;
   --ink: #142522;
+  --ink-strong: #0e1d19;
   --muted: #5b6c66;
   --line: #d7e4de;
   --line-strong: #b7cec4;
+  --cream: #f7f3e8;
   --leaf: #16745d;
   --leaf-deep: #0f4e43;
   --leaf-soft: #dff3eb;
+  --mint-bright: #74ead2;
+  --forest: #10241c;
+  --forest-2: #153f34;
   --blue: #2c6695;
   --blue-soft: #e0eef8;
   --coral: #c95f43;
@@ -320,9 +325,30 @@ li {
 }
 
 .section-soft {
-  padding: 54px 0;
+  position: relative;
+  overflow: hidden;
+  padding: 76px 0;
+  color: var(--cream);
   background:
-    linear-gradient(90deg, transparent 0, transparent calc((100% - var(--content-width)) / 2), rgba(255, 255, 255, 0.68) calc((100% - var(--content-width)) / 2), rgba(255, 255, 255, 0.68) calc(100% - ((100% - var(--content-width)) / 2)), transparent calc(100% - ((100% - var(--content-width)) / 2)));
+    radial-gradient(circle at 18% 12%, rgba(116, 234, 210, 0.18), transparent 32%),
+    radial-gradient(circle at 82% 84%, rgba(201, 95, 67, 0.18), transparent 34%),
+    linear-gradient(135deg, var(--forest) 0%, var(--forest-2) 58%, #0d1b16 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.section-soft .eyebrow {
+  color: var(--mint-bright);
+}
+
+.section-soft h2 {
+  color: var(--cream);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+}
+
+.section-soft p {
+  color: rgba(247, 243, 232, 0.82);
 }
 
 .section-heading {
@@ -470,6 +496,20 @@ li {
   align-items: start;
 }
 
+.section-soft .step-card {
+  border-color: rgba(255, 255, 255, 0.13);
+  background: rgba(14, 29, 25, 0.84);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.22);
+}
+
+.section-soft .step-card h3 {
+  color: #fffaf2;
+}
+
+.section-soft .step-card p {
+  color: rgba(247, 243, 232, 0.78);
+}
+
 .step-number {
   display: inline-flex;
   align-items: center;
@@ -482,11 +522,24 @@ li {
   background: var(--leaf-soft);
 }
 
+.section-soft .step-number {
+  color: #fffaf2;
+  border: 1px solid rgba(116, 234, 210, 0.24);
+  background: rgba(116, 234, 210, 0.18);
+}
+
 .manifesto-copy {
   display: grid;
   gap: 14px;
-  padding: 24px;
-  background: linear-gradient(135deg, #ffffff, var(--coral-soft));
+  padding: 28px;
+  border-color: rgba(255, 255, 255, 0.18);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(253, 232, 222, 0.9) 58%, rgba(244, 201, 93, 0.2)),
+    var(--surface);
+}
+
+.section-soft .manifesto-copy p {
+  color: #46514d;
 }
 
 .cta-band {
@@ -644,8 +697,7 @@ code {
   }
 
   .section-soft {
-    padding: 36px 0;
-    background: rgba(255, 255, 255, 0.46);
+    padding: 46px 0;
   }
 
   .hero-actions,
