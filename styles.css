@@ -530,16 +530,27 @@ li {
 
 .manifesto-copy {
   display: grid;
-  gap: 14px;
-  padding: 28px;
-  border-color: rgba(255, 255, 255, 0.18);
+  align-content: center;
+  gap: 18px;
+  min-height: 244px;
+  padding: clamp(24px, 3vw, 36px);
+  color: var(--ink);
+  border-color: rgba(247, 243, 232, 0.44);
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(253, 232, 222, 0.9) 58%, rgba(244, 201, 93, 0.2)),
+    linear-gradient(135deg, #fffaf4 0%, #fff6ef 62%, #f8efd6 100%),
     var(--surface);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.16);
+}
+
+.manifesto-copy p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
 
 .section-soft .manifesto-copy p {
-  color: #46514d;
+  color: var(--ink);
 }
 
 .cta-band {
