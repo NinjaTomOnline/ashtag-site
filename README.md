@@ -1,6 +1,6 @@
-# AshTag Public Site
+# QuitGentle Public Site
 
-This is the public GitHub Pages site repo for AshTag Quit Smoking.
+This is the public GitHub Pages site repo for QuitGentle.
 
 The source of truth for the site content lives in the private app repo and is exported here with:
 

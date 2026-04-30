@@ -1,5 +1,5 @@
-name: AshTag Support Request
-description: Report a bug or ask for help with the public AshTag release.
+name: QuitGentle Support Request
+description: Report a bug or ask for help with the public QuitGentle release.
 title: "[Support] "
 labels:
   - support
@@ -8,7 +8,7 @@ body:
     id: area
     attributes:
       label: Area
-      description: What part of AshTag needs help?
+      description: What part of QuitGentle needs help?
       options:
         - Install or update
         - Cloud Sync
@@ -40,8 +40,8 @@ body:
   - type: input
     id: app_version
     attributes:
-      label: AshTag version and build
-      description: The version shown in AshTag, for example 1.0 (2).
+      label: QuitGentle version and build
+      description: The version shown in QuitGentle, for example 1.0 (2).
       placeholder: 1.0 (2)
     validations:
       required: true
@@ -49,14 +49,14 @@ body:
     id: expected
     attributes:
       label: What you expected
-      placeholder: Tell us what you expected AshTag to do.
+      placeholder: Tell us what you expected QuitGentle to do.
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
       label: What happened instead
-      placeholder: Tell us what AshTag did instead, including any visible error or sync state.
+      placeholder: Tell us what QuitGentle did instead, including any visible error or sync state.
     validations:
       required: true
   - type: textarea
