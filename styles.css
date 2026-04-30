@@ -534,23 +534,24 @@ li {
   gap: 18px;
   min-height: 244px;
   padding: clamp(24px, 3vw, 36px);
-  color: var(--ink);
-  border-color: rgba(247, 243, 232, 0.44);
+  color: #fffaf2;
+  border-color: rgba(116, 234, 210, 0.28);
   background:
-    linear-gradient(135deg, #fffaf4 0%, #fff6ef 62%, #f8efd6 100%),
-    var(--surface);
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.16);
+    linear-gradient(135deg, rgba(14, 29, 25, 0.98), rgba(21, 63, 52, 0.94) 64%, rgba(13, 27, 22, 0.98)),
+    var(--forest);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.26);
 }
 
 .manifesto-copy p {
   margin: 0;
-  color: var(--ink);
+  color: #fffaf2;
   font-size: 1.05rem;
+  font-weight: 650;
   line-height: 1.75;
 }
 
 .section-soft .manifesto-copy p {
-  color: var(--ink);
+  color: #fffaf2;
 }
 
 .cta-band {
