@@ -8,20 +8,23 @@
       name="description"
       content="QuitGentle is a calmer smoking tracker for fast cigarette logging, craving support, progress tracking, hotspot insights, and optional Cloud Sync."
     >
-    <meta name="theme-color" content="#16745d">
+    <meta name="theme-color" content="#07110e">
     <link rel="canonical" href="https://quitgentle.com/">
-    <link rel="stylesheet" href="./styles.css?v=20260430-landing-swag">
+    <link rel="stylesheet" href="./styles.css?v=20260501-site-swag">
   </head>
-  <body>
+  <body class="home-page">
     <header class="site-header">
       <div class="site-shell header-inner">
-        <a class="brand" href="./">
+        <a class="brand" href="./" aria-label="QuitGentle home">
           <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-word">QuitGentle</span>
+          <span class="brand-copy">
+            <strong>QuitGentle</strong>
+            <span>Smoke tracking without the shame spiral</span>
+          </span>
         </a>
         <nav class="site-nav" aria-label="Primary">
-          <a href="#how-it-helps">Moments</a>
           <a href="#screens">Screens</a>
+          <a href="#moments">Moments</a>
           <a href="#trust">Trust</a>
           <a href="#platforms">Platforms</a>
           <a href="./support/">Support</a>
@@ -33,114 +36,149 @@
     <main>
       <section class="hero">
         <div class="site-shell hero-layout">
-          <div class="hero-panel">
-            <div class="eyebrow">Smoking tracker + craving support</div>
+          <div class="hero-content">
             <h1>QuitGentle</h1>
+            <p class="hero-subhead">Track the quitting curve without getting shamed by it.</p>
             <p class="hero-copy">
-              A smoking tracker for the real quitting curve: quick logs, calmer rescue tools,
-              honest progress, and pattern insights that help the next minute feel possible.
+              Fast cigarette logs, craving support, progress context, and optional sync for people
+              who need the next minute to feel possible.
             </p>
             <div class="hero-actions">
               <a class="button" href="./support/">Get Support</a>
               <a class="button-secondary" href="./privacy/">Read Privacy Policy</a>
               <span class="button-muted" aria-disabled="true">App Store link coming soon</span>
             </div>
-            <div class="hero-proof-row" aria-label="Launch promises">
+            <div class="trust-row" aria-label="Launch promises">
               <span>No account required</span>
               <span>Optional Cloud Sync</span>
               <span>Apple Health / HealthKit is opt-in and read-only</span>
             </div>
           </div>
 
-          <aside class="hero-aside" aria-label="Launch highlights">
-            <div class="metric">
-              <p class="metric-label">Fast when it counts</p>
-              <strong>Log cigarettes and cravings without turning the moment into homework.</strong>
+          <div class="hero-stage" aria-label="QuitGentle app preview">
+            <figure class="hero-phone">
+              <img
+                src="./assets/screenshots/quitgentle-today-marketing.png"
+                alt="QuitGentle Today screen with progress context and quick support."
+              >
+            </figure>
+            <div class="signal-card signal-card-top">
+              <span>Live reset</span>
+              <strong>21.0s since last cigarette</strong>
+              <p>Log honestly, then keep moving.</p>
             </div>
-            <div class="metric">
-              <p class="metric-label">Support nearby</p>
-              <strong>Rescue tools, widgets, Apple Watch, and Live Activity surfaces stay close.</strong>
+            <div class="signal-card signal-card-bottom">
+              <span>Rescue nearby</span>
+              <strong>Delay, breathe, walk, reflect</strong>
+              <p>Use the tool that fits the craving.</p>
             </div>
-            <div class="metric">
-              <p class="metric-label">Built with restraint</p>
-              <strong>Optional permissions, export/delete controls, and device-first defaults.</strong>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section" id="how-it-helps" aria-labelledby="how-title">
-        <div class="site-shell">
-          <div class="section-heading">
-            <div class="eyebrow">How QuitGentle helps</div>
-            <h2 id="how-title">Support that stays practical when the day gets messy.</h2>
-            <p class="section-intro">
-              QuitGentle keeps the interface focused on repeatable moments: logging fast, resetting
-              after a rough patch, and returning later with enough context to notice what keeps
-              pulling you back.
-            </p>
-          </div>
-
-          <div class="feature-grid">
-            <article class="feature-card">
-              <h3>Fast cigarette logging</h3>
-              <p>Log a cigarette in seconds without losing the thread of the day.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Craving tracking</h3>
-              <p>Capture urges quickly so patterns become easier to see and talk through.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Rescue tools</h3>
-              <p>Use breathing, delay, walking, hydration, and reflection tools when a craving spikes.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Progress and history</h3>
-              <p>Review streaks, milestones, and recent patterns without turning the app into a lecture.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Hotspot insights</h3>
-              <p>Optional location support helps turn repeated smoking places into clearer context.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Watch and widgets</h3>
-              <p>Reach logging and support faster from Apple Watch, Home Screen widgets, and Lock Screen surfaces.</p>
-            </article>
           </div>
         </div>
       </section>
 
-      <section class="section scene-section" aria-labelledby="scene-title">
+      <section class="screen-wall" id="screens" aria-label="QuitGentle app screens">
+        <div class="screen-wall-copy">
+          <h2>The app is designed to be reached fast, then leave you alone.</h2>
+          <p>
+            Today, Rescue, Progress, History, Hotspots, and Sync surfaces work together without
+            turning every rough moment into a lecture.
+          </p>
+        </div>
+        <div class="phone-strip">
+          <figure class="phone-frame">
+            <img src="./assets/screenshots/quitgentle-today-marketing.png" alt="QuitGentle Today screen.">
+            <figcaption>Today</figcaption>
+          </figure>
+          <figure class="phone-frame">
+            <img src="./assets/screenshots/quitgentle-rescue.png" alt="QuitGentle Rescue screen.">
+            <figcaption>Rescue</figcaption>
+          </figure>
+          <figure class="phone-frame">
+            <img src="./assets/screenshots/quitgentle-progress.png" alt="QuitGentle Progress screen.">
+            <figcaption>Progress</figcaption>
+          </figure>
+          <figure class="phone-frame">
+            <img src="./assets/screenshots/quitgentle-history.png" alt="QuitGentle History screen.">
+            <figcaption>History</figcaption>
+          </figure>
+          <figure class="phone-frame">
+            <img src="./assets/screenshots/quitgentle-hotspots.png" alt="QuitGentle Hotspots screen.">
+            <figcaption>Hotspots</figcaption>
+          </figure>
+          <figure class="phone-frame">
+            <img src="./assets/screenshots/quitgentle-today-collapsed-sync.png" alt="QuitGentle quiet sync status.">
+            <figcaption>Sync</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="feature-rail" aria-label="QuitGentle core features">
+        <article>
+          <span class="feature-icon log-icon" aria-hidden="true"></span>
+          <h3>Log fast</h3>
+          <p>Capture cigarettes and cravings in seconds without turning the moment into homework.</p>
+        </article>
+        <article>
+          <span class="feature-icon rescue-icon" aria-hidden="true"></span>
+          <h3>Ride it out</h3>
+          <p>Use breathing, delay, walking, hydration, and reflection tools when pressure spikes.</p>
+        </article>
+        <article>
+          <span class="feature-icon pattern-icon" aria-hidden="true"></span>
+          <h3>Notice patterns</h3>
+          <p>Review history, hotspots, milestones, and progress when perspective is useful.</p>
+        </article>
+        <article>
+          <span class="feature-icon sync-icon" aria-hidden="true"></span>
+          <h3>Keep control</h3>
+          <p>Use the app device-first, then opt into Cloud Sync or permissions only when wanted.</p>
+        </article>
+      </section>
+
+      <section class="section scenario-section" id="moments" aria-labelledby="moments-title">
         <div class="site-shell">
-          <div class="section-heading">
-            <div class="eyebrow">Real moments</div>
-            <h2 id="scene-title">Made for the places where cravings actually show up.</h2>
-            <p class="section-intro">
-              The site should feel like the app: steady, quick to scan, and grounded in ordinary
-              smoking triggers instead of glossy wellness theater.
-            </p>
+          <div class="section-header">
+            <div>
+              <h2 id="moments-title">Built for the ordinary places cravings actually show up.</h2>
+              <p>
+                The product stance is simple: log the truth, use support quickly, and return later
+                with enough context to make the next choice with a little more room.
+              </p>
+            </div>
           </div>
 
-          <div class="moment-grid">
-            <article class="moment-card">
-              <span class="moment-time">Morning</span>
-              <h3>Coffee, keys, old habit</h3>
-              <p>Log what happened, then move on before the day hardens around it.</p>
+          <div class="scenario-grid">
+            <article class="scenario-card morning">
+              <div class="scenario-media" aria-hidden="true"></div>
+              <div class="scenario-copy">
+                <span>Morning</span>
+                <h3>Coffee, keys, old habit</h3>
+                <p>Log what happened before the whole day gets defined by it.</p>
+              </div>
             </article>
-            <article class="moment-card">
-              <span class="moment-time">Work break</span>
-              <h3>The five-minute pressure spike</h3>
-              <p>Start a delay, breathe, or step away without digging through menus.</p>
+            <article class="scenario-card break">
+              <div class="scenario-media" aria-hidden="true"></div>
+              <div class="scenario-copy">
+                <span>Work break</span>
+                <h3>The five-minute pressure spike</h3>
+                <p>Start a delay, breathe, or step away without digging through settings.</p>
+              </div>
             </article>
-            <article class="moment-card">
-              <span class="moment-time">Commute</span>
-              <h3>The repeat-place pattern</h3>
-              <p>Optional hotspot context helps make familiar triggers easier to spot.</p>
+            <article class="scenario-card commute">
+              <div class="scenario-media" aria-hidden="true"></div>
+              <div class="scenario-copy">
+                <span>Commute</span>
+                <h3>The repeat-place pattern</h3>
+                <p>Optional hotspot context can make familiar triggers easier to spot.</p>
+              </div>
             </article>
-            <article class="moment-card">
-              <span class="moment-time">Evening</span>
-              <h3>Reset without the lecture</h3>
-              <p>Review progress and history when perspective helps more than pressure.</p>
+            <article class="scenario-card night">
+              <div class="scenario-media" aria-hidden="true"></div>
+              <div class="scenario-copy">
+                <span>Evening</span>
+                <h3>Reset without the lecture</h3>
+                <p>Come back to progress and history when perspective helps more than pressure.</p>
+              </div>
             </article>
           </div>
         </div>
@@ -149,8 +187,11 @@
       <section class="section section-soft" id="daily-flow" aria-labelledby="day-title">
         <div class="site-shell split-layout">
           <div>
-            <div class="eyebrow">Daily flow</div>
-            <h2 id="day-title">QuitGentle is meant to stay useful all day, not only at the beginning.</h2>
+            <h2 id="day-title">QuitGentle stays useful after the first check-in.</h2>
+            <p>
+              The app is built around small repeatable interactions: log quickly, reach for a rescue
+              tool when needed, and review patterns when you have the bandwidth.
+            </p>
           </div>
           <div class="step-list" role="list" aria-label="Typical QuitGentle flow">
             <div class="step-card" role="listitem">
@@ -163,160 +204,47 @@
             <div class="step-card" role="listitem">
               <span class="step-number">02</span>
               <div>
-                <h3>Use a rescue tool if you need one</h3>
-                <p>Pick breathing, delay, hydration, walking, or reflection based on the moment.</p>
+                <h3>Use support in the moment</h3>
+                <p>Pick breathing, delay, hydration, walking, or reflection based on what the craving needs.</p>
               </div>
             </div>
             <div class="step-card" role="listitem">
               <span class="step-number">03</span>
               <div>
-                <h3>Come back to patterns later</h3>
-                <p>Review hotspots, history, and milestones when you want perspective, not pressure.</p>
+                <h3>Review patterns later</h3>
+                <p>Hotspots, history, progress, and milestones are there when context is more helpful.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="screens" aria-labelledby="screens-title">
-        <div class="site-shell">
-          <div class="section-heading">
-            <div class="eyebrow">Inside the app</div>
-            <h2 id="screens-title">A quick look at the product people will actually use.</h2>
-            <p class="section-intro">
-              These launch screenshots show the current QuitGentle product surfaces for Today,
-              Rescue, Progress, History, Hotspots, and the calmer collapsed sync state.
-            </p>
-          </div>
-
-          <div class="screenshot-grid">
-            <figure class="screenshot-card">
-              <div class="screenshot-frame">
-                <img
-                  src="./assets/screenshots/quitgentle-today-marketing.png"
-                  alt="Today screen showing progress context and rescue entry points."
-                >
-              </div>
-              <figcaption>Today overview with quick context and calmer support.</figcaption>
-            </figure>
-            <figure class="screenshot-card">
-              <div class="screenshot-frame">
-                <img
-                  src="./assets/screenshots/quitgentle-rescue.png"
-                  alt="Rescue screen showing breathing, delay, walking, and reflection tools."
-                >
-              </div>
-              <figcaption>Rescue tools for the moments when cravings spike.</figcaption>
-            </figure>
-            <figure class="screenshot-card">
-              <div class="screenshot-frame">
-                <img
-                  src="./assets/screenshots/quitgentle-progress.png"
-                  alt="Progress screen showing milestone and streak context."
-                >
-              </div>
-              <figcaption>Progress that feels readable instead of punishing.</figcaption>
-            </figure>
-            <figure class="screenshot-card">
-              <div class="screenshot-frame">
-                <img
-                  src="./assets/screenshots/quitgentle-history.png"
-                  alt="History screen showing logged entries and timeline context."
-                >
-              </div>
-              <figcaption>History that helps patterns surface over time.</figcaption>
-            </figure>
-            <figure class="screenshot-card">
-              <div class="screenshot-frame">
-                <img
-                  src="./assets/screenshots/quitgentle-hotspots.png"
-                  alt="Hotspot Map screen showing place-based smoking context."
-                >
-              </div>
-              <figcaption>Optional hotspot insights for repeated smoking places.</figcaption>
-            </figure>
-            <figure class="screenshot-card">
-              <div class="screenshot-frame">
-                <img
-                  src="./assets/screenshots/quitgentle-today-collapsed-sync.png"
-                  alt="Today screen with the sync status collapsed into a quieter summary."
-                >
-              </div>
-              <figcaption>Cloud Sync stays quieter when everything is healthy.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="trust" aria-labelledby="trust-title">
-        <div class="site-shell">
-          <div class="section-heading">
-            <div class="eyebrow">Trust and privacy</div>
-            <h2 id="trust-title">Designed to earn trust before asking for more.</h2>
-            <p class="section-intro">
-              QuitGentle is built to remain usable without an account and without turning every
-              permission into a requirement. The app stays device-first unless the user chooses
-              otherwise, and HealthKit support is clearly identified as optional, read-only Apple
-              Health context.
+        <div class="site-shell trust-layout">
+          <div>
+            <h2 id="trust-title">Trust is a feature, not a footnote.</h2>
+            <p>
+              QuitGentle keeps the core experience available without an account and without requiring
+              sensitive permissions. Optional Apple Health / HealthKit support is read-only heart-rate
+              context, and Cloud Sync stays opt-in.
             </p>
           </div>
-
           <div class="trust-grid">
-            <article class="trust-card">
+            <article>
               <h3>No account required</h3>
-              <p>The core experience works without sign-up or a personal account.</p>
+              <p>The core tracker works without sign-up.</p>
             </article>
-            <article class="trust-card">
+            <article>
               <h3>Optional permissions</h3>
-              <p>Location, notifications, Health, and Motion &amp; Fitness are optional, not required for basic use.</p>
+              <p>Location, notifications, Health, and Motion &amp; Fitness are user choices.</p>
             </article>
-            <article class="trust-card">
-              <h3>Apple Health / HealthKit clarity</h3>
-              <p>Health access is read-only, opt-in, and used only for recent heart-rate context when attached.</p>
+            <article>
+              <h3>Data controls</h3>
+              <p>Export, import, delete, and reset tools live inside the app.</p>
             </article>
-            <article class="trust-card">
-              <h3>Optional Cloud Sync</h3>
-              <p>Users can keep data on one device or enable Cloud Sync across signed Apple devices on the same iCloud account.</p>
-            </article>
-            <article class="trust-card">
-              <h3>Data control in the app</h3>
-              <p>Export, import, delete, and reset tools are available inside the product.</p>
-            </article>
-            <article class="trust-card">
+            <article>
               <h3>Not clinical care</h3>
-              <p>QuitGentle does not diagnose, prescribe, use CareKit, or replace medical or emergency support.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="platforms" aria-labelledby="platforms-title">
-        <div class="site-shell">
-          <div class="section-heading">
-            <div class="eyebrow">Platforms</div>
-            <h2 id="platforms-title">Built around the devices people actually reach for.</h2>
-          </div>
-
-          <div class="platform-grid">
-            <article class="platform-card">
-              <h3>iPhone</h3>
-              <p>The primary QuitGentle experience for logging, rescue tools, history, and progress.</p>
-            </article>
-            <article class="platform-card">
-              <h3>iPad</h3>
-              <p>A roomier dashboard for reviewing progress, settings, and longer context.</p>
-            </article>
-            <article class="platform-card">
-              <h3>Apple Watch</h3>
-              <p>Quick support and fast wrist logging when the phone is not the easiest tool to reach.</p>
-            </article>
-            <article class="platform-card">
-              <h3>Widgets</h3>
-              <p>Focused Home Screen and Lock Screen surfaces for glanceable context and quick access.</p>
-            </article>
-            <article class="platform-card">
-              <h3>Live Activity</h3>
-              <p>The delay flow can stay visible while a user rides out a craving.</p>
+              <p>QuitGentle does not diagnose, prescribe, use CareKit, or replace medical support.</p>
             </article>
           </div>
         </div>
@@ -325,8 +253,11 @@
       <section class="section section-soft" id="product-stance" aria-labelledby="positioning-title">
         <div class="site-shell manifesto">
           <div>
-            <div class="eyebrow">Product stance</div>
-            <h2 id="positioning-title">QuitGentle is designed to feel calm, not preachy.</h2>
+            <h2 id="positioning-title">Calm, not preachy.</h2>
+            <p>
+              QuitGentle is for honest logs, practical rescue tools, and pattern awareness that does
+              not make a difficult day feel like a character flaw.
+            </p>
           </div>
           <div class="manifesto-copy">
             <p>
@@ -334,47 +265,42 @@
               clinical treatment. It is not here to turn every tough day into failure.
             </p>
             <p>
-              QuitGentle is for logging honestly, using support quickly, and noticing patterns clearly
-              enough to make the next decision with a little more room.
+              QuitGentle helps people notice what is happening clearly enough to make the next
+              decision with a little more room.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="links-title">
+      <section class="section" id="platforms" aria-labelledby="platforms-title">
         <div class="site-shell">
-          <div class="section-heading">
-            <div class="eyebrow">Public links</div>
-            <h2 id="links-title">Public-facing pages for App Review, support, and customer trust.</h2>
+          <div class="section-header">
+            <div>
+              <h2 id="platforms-title">Built around the devices people actually reach for.</h2>
+              <p>iPhone, iPad, Apple Watch, widgets, and Live Activity surfaces keep the right entry point close.</p>
+            </div>
           </div>
-          <div class="link-grid">
-            <a class="link-card" href="./privacy/">
-              <h3>Privacy Policy</h3>
-              <p>Review stored data, optional permissions, and Cloud Sync posture.</p>
-            </a>
-            <a class="link-card" href="./support/">
-              <h3>Support</h3>
-              <p>Find help for installs, sync, exports, widgets, Apple Watch, and support questions.</p>
-            </a>
-            <a class="link-card" href="./legal/">
-              <h3>Legal Notes</h3>
-              <p>See scope guidance, non-medical positioning, and urgent-help notes.</p>
-            </a>
+          <div class="platform-grid">
+            <article><h3>iPhone</h3><p>The primary experience for logging, support, history, and progress.</p></article>
+            <article><h3>iPad</h3><p>A roomier dashboard for reviewing patterns, settings, and longer context.</p></article>
+            <article><h3>Apple Watch</h3><p>Quick support and fast wrist logging when the phone is not easiest.</p></article>
+            <article><h3>Widgets</h3><p>Focused Home Screen and Lock Screen surfaces for glanceable context.</p></article>
+            <article><h3>Live Activity</h3><p>The delay flow can stay visible while a user rides out a craving.</p></article>
           </div>
         </div>
       </section>
 
       <section class="section section-final" aria-labelledby="cta-title">
-        <div class="site-shell cta-band">
+        <div class="site-shell support-band">
+          <div class="shield-mark" aria-hidden="true"></div>
           <div>
-            <div class="eyebrow">Current release posture</div>
-            <h2 id="cta-title">QuitGentle’s public site is ready before the App Store link goes live.</h2>
+            <h2 id="cta-title">The public site is ready before the App Store link goes live.</h2>
             <p>
-              Use the support, privacy, and legal pages now. The App Store download link will be
-              added once the listing is live and publicly reachable.
+              Support, privacy, legal notes, and the structured support form are available now. The
+              App Store download link will be added once the listing is live and publicly reachable.
             </p>
           </div>
-          <div class="hero-actions">
+          <div class="hero-actions support-actions">
             <a class="button" href="./support/">Get Support</a>
             <a class="button-secondary" href="./privacy/">Review Privacy</a>
             <span class="button-muted" aria-disabled="true">App Store link coming soon</span>
