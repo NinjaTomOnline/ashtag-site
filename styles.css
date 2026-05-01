@@ -175,11 +175,11 @@ main {
 
 .hero-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.96fr) minmax(380px, 0.78fr);
+  grid-template-columns: minmax(0, 0.94fr) minmax(420px, 0.82fr);
   gap: clamp(28px, 4vw, 58px);
   align-items: center;
-  min-height: 690px;
-  padding: clamp(58px, 7vw, 96px) 0;
+  min-height: 720px;
+  padding: clamp(64px, 7vw, 98px) 0 clamp(84px, 8vw, 112px);
 }
 
 .hero-content {
@@ -313,14 +313,14 @@ li {
 .hero-stage {
   position: relative;
   z-index: 1;
-  min-height: 570px;
+  min-height: 610px;
 }
 
 .hero-phone {
   position: absolute;
-  right: 2%;
-  bottom: -20px;
-  width: min(78%, 360px);
+  right: 0;
+  bottom: -4px;
+  width: min(66%, 330px);
   margin: 0;
   filter: drop-shadow(0 34px 64px rgba(0, 0, 0, 0.58));
 }
@@ -337,8 +337,8 @@ li {
 .signal-card {
   position: absolute;
   z-index: 2;
-  width: min(320px, 76%);
-  padding: 18px;
+  width: min(286px, 62%);
+  padding: 16px;
   border: 1px solid rgba(255, 250, 242, 0.14);
   border-radius: var(--radius);
   background:
@@ -349,13 +349,15 @@ li {
 }
 
 .signal-card-top {
-  top: 48px;
+  top: 92px;
   left: 0;
 }
 
 .signal-card-bottom {
-  right: 0;
-  bottom: 42px;
+  right: auto;
+  left: clamp(32px, 8%, 58px);
+  bottom: 118px;
+  width: min(286px, 62%);
   background:
     linear-gradient(135deg, rgba(40, 24, 14, 0.94), rgba(15, 78, 67, 0.74)),
     rgba(14, 29, 25, 0.94);
@@ -389,7 +391,7 @@ li {
   gap: 24px;
   align-items: center;
   width: min(calc(100% - 64px), 1160px);
-  margin: -44px auto 42px;
+  margin: 34px auto 54px;
   padding: 22px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
@@ -1204,6 +1206,17 @@ code {
     width: min(310px, 82%);
   }
 
+  .signal-card-top {
+    top: 28px;
+    left: 0;
+  }
+
+  .signal-card-bottom {
+    right: 0;
+    left: auto;
+    bottom: 72px;
+  }
+
   .phone-strip {
     grid-template-columns: repeat(2, minmax(118px, 1fr));
   }
@@ -1271,9 +1284,12 @@ code {
 
   .signal-card-top {
     top: 18px;
+    left: 0;
   }
 
   .signal-card-bottom {
+    right: 0;
+    left: auto;
     bottom: 18px;
   }
 
