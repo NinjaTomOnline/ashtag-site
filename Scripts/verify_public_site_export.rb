@@ -68,6 +68,16 @@ def extract_anchor_pairs(content)
   end
 end
 
+def appears_before?(content, needle, boundary)
+  return false unless content
+
+  needle_index = content.index(needle)
+  boundary_index = content.index(boundary)
+  return false unless needle_index && boundary_index
+
+  needle_index < boundary_index
+end
+
 def parse_hex_color(value)
   match = value.to_s.strip.match(/\A#([0-9a-f]{6})\z/i)
   return nil unless match
@@ -181,6 +191,7 @@ required_ctas = manifest.fetch("requiredCtas")
 required_footer_links = manifest.fetch("requiredFooterLinks")
 required_copy_anchors = manifest.fetch("requiredCopyAnchors")
 required_link_labels = manifest.fetch("requiredLinkLabels")
+required_above_fold_assets = manifest.fetch("requiredAboveFoldAssets", {})
 contrast_checks = manifest.fetch("contrastChecks", [])
 layout_checks = manifest.fetch("layoutChecks", [])
 social_metadata = manifest.fetch("socialMetadata", {})
@@ -194,6 +205,7 @@ section_counts = {
   "footerLinks" => required_footer_links.length,
   "copyAnchors" => required_copy_anchors.length,
   "linkLabels" => required_link_labels.length,
+  "aboveFoldAssets" => required_above_fold_assets.sum { |_relative_path, checks| checks.length },
   "contrastChecks" => contrast_checks.length,
   "layoutChecks" => layout_checks.sum { |check| check.fetch("rules", []).length }
 }
@@ -302,6 +314,21 @@ required_link_labels.each do |relative_path, expectations|
   end
 end
 
+required_above_fold_assets.each do |relative_path, expectations|
+  full_path = File.join(repo_root, relative_path)
+  content = read_file(full_path)
+  next unless content
+
+  expectations.each do |expectation|
+    label = expectation.fetch("label")
+    asset = expectation.fetch("asset")
+    before = expectation.fetch("before")
+    unless appears_before?(content, asset, before)
+      add_failure(failures, "aboveFoldAssets", relative_path, "#{label} must reference #{asset.inspect} before #{before.inspect}")
+    end
+  end
+end
+
 contrast_checks.each do |check|
   relative_path = check.fetch("path")
   full_path = File.join(repo_root, relative_path)
@@ -402,6 +429,7 @@ if verbose
   puts "  footer links: #{section_counts["footerLinks"]} pages checked"
   puts "  copy anchors: #{section_counts["copyAnchors"]} pages checked"
   puts "  link labels: #{section_counts["linkLabels"]} pages checked"
+  puts "  above-fold assets: #{section_counts["aboveFoldAssets"]} checked"
   puts "  contrast checks: #{section_counts["contrastChecks"]} checked"
   puts "  layout checks: #{section_counts["layoutChecks"]} checked"
 end

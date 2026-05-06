@@ -207,6 +207,22 @@
       { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
     ]
   },
+  "requiredAboveFoldAssets": {
+    "index.html": [
+      {
+        "label": "homepage hero official App Store badge",
+        "asset": "./assets/badges/download-on-the-app-store.svg",
+        "before": "<section class=\"section rescue-section\""
+      }
+    ],
+    "press/index.html": [
+      {
+        "label": "press hero official App Store badge",
+        "asset": "../assets/badges/download-on-the-app-store.svg",
+        "before": "<section class=\"page-stack\""
+      }
+    ]
+  },
   "contrastChecks": [
     {
       "name": "privacy/support/legal dark page panels",
