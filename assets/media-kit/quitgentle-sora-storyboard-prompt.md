@@ -10,6 +10,13 @@ Use the attached images as hard visual references for the app icon, device UI, c
 
 QuitGentle is a calm, local-first smoking cessation companion focused on fast logging, craving support, progress tracking, hotspot map insights, widgets, and Apple Watch support.
 
+Current launch facts to preserve in end cards and captions:
+
+- App Store title: QuitGentle Smoking Tracker
+- App Store URL: https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030
+- Current public version: 1.0
+- Launch price: Free
+
 The ad should feel like a modern paid social mobile ad:
 
 - fast hook in the first 2 seconds
@@ -97,7 +104,7 @@ On-screen text:
 `QuitGentle`
 
 Secondary end-card text:
-`Calm craving support and progress tracking`
+`Download free on the App Store`
 
 ## Voiceover
 

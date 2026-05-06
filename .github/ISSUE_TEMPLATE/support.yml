@@ -41,8 +41,8 @@ body:
     id: app_version
     attributes:
       label: QuitGentle version and build
-      description: The version shown in QuitGentle, for example 1.0 (2).
-      placeholder: 1.0 (2)
+      description: The version shown in QuitGentle, for example 1.0 (5).
+      placeholder: 1.0 (5)
     validations:
       required: true
   - type: textarea

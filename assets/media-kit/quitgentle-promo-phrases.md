@@ -2,6 +2,13 @@
 
 Use these phrases to keep ads aligned with the actual app and App Store positioning.
 
+## Current Launch Facts
+
+- App Store title: QuitGentle Smoking Tracker
+- App Store URL: https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030
+- Current public version: 1.0
+- Launch price: Free
+
 ## Primary Brand Line
 
 - Calm craving support and progress tracking
@@ -29,6 +36,7 @@ Use these phrases to keep ads aligned with the actual app and App Store position
 ## End Card Options
 
 - QuitGentle
+- Download free on the App Store
 - Calm craving support and progress tracking
 - Log fast. Reset faster.
 - Track the urge. Protect the streak.
