@@ -209,12 +209,25 @@ p {
 
 .site-nav a:focus-visible,
 .footer-links a:focus-visible,
+.app-store-badge-link:focus-visible,
 .button:focus-visible,
 .button-secondary:focus-visible,
 .button-muted:focus-visible,
 .asset-card:focus-visible {
   outline: 3px solid rgba(246, 221, 162, 0.72);
   outline-offset: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 main {
@@ -314,6 +327,22 @@ main {
   border: 1px dashed rgba(255, 250, 242, 0.3);
   background: rgba(255, 250, 242, 0.04);
   cursor: default;
+}
+
+.app-store-badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  max-width: 100%;
+  min-height: 40px;
+  line-height: 0;
+}
+
+.app-store-badge-link img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .button:hover,
@@ -658,11 +687,13 @@ main {
 
 .ecosystem-showcase img {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
+  height: clamp(320px, 42vw, 520px);
+  object-fit: contain;
   border: 1px solid rgba(231, 193, 118, 0.28);
   border-radius: var(--radius);
-  background: #120d0b;
+  background:
+    radial-gradient(circle at 50% 12%, rgba(231, 193, 118, 0.12), transparent 42%),
+    #120d0b;
   box-shadow: var(--shadow-soft);
 }
 

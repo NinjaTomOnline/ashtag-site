@@ -1,0 +1,285 @@
+{
+  "maintainerNote": "When public-site titles, descriptions, Open Graph/Twitter tags, CTA links, link labels, shared-nav links, footer links, or trust-page hero and callout copy change, update this manifest in the same PR so CI stays aligned with the exported site.",
+  "pages": {
+    "index.html": {
+      "title": "QuitGentle Smoking Tracker",
+      "description": "QuitGentle is a shame-free smoking tracker with fast cigarette and craving logs, quiet rescue tools, pattern awareness, optional sync, and no account required."
+    },
+    "privacy/index.html": {
+      "title": "QuitGentle Privacy Policy",
+      "description": "QuitGentle privacy policy covering stored data, optional permissions, optional Apple Health / HealthKit context, Cloud Sync, and export or deletion controls."
+    },
+    "press/index.html": {
+      "title": "QuitGentle Press and Media Kit",
+      "description": "QuitGentle press and media kit with product positioning, platform facts, approved screenshots, Sora references, and support contact details."
+    },
+    "support/index.html": {
+      "title": "QuitGentle Support",
+      "description": "QuitGentle support help for installs, Cloud Sync, Apple Health / HealthKit, import and export, widgets, Apple Watch, and bug reports."
+    },
+    "legal/index.html": {
+      "title": "QuitGentle Legal Notes",
+      "description": "QuitGentle legal notes covering non-medical use, emergency guidance, and the scope of supportive suggestions."
+    },
+    "404.html": {
+      "title": "Page Not Found | QuitGentle",
+      "description": "QuitGentle public launch site page not found."
+    }
+  },
+  "socialMetadata": {
+    "index.html": {
+      "property": {
+        "og:type": "website",
+        "og:site_name": "QuitGentle",
+        "og:title": "QuitGentle Smoking Tracker",
+        "og:description": "Log honestly. Survive the craving. Notice the pattern. Keep going with shame-free smoking tracking and rescue tools.",
+        "og:url": "https://quitgentle.com/",
+        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
+        "og:image:alt": "QuitGentle Today screen with smoking progress and quick support tools."
+      },
+      "name": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "QuitGentle Smoking Tracker",
+        "twitter:description": "A calmer way to log cigarettes, ride out cravings, and see patterns without the shame spiral.",
+        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+      }
+    },
+    "privacy/index.html": {
+      "property": {
+        "og:type": "website",
+        "og:site_name": "QuitGentle",
+        "og:title": "QuitGentle Privacy Policy",
+        "og:description": "QuitGentle privacy policy covering stored data, optional permissions, optional Apple Health / HealthKit context, Cloud Sync, and export or deletion controls.",
+        "og:url": "https://quitgentle.com/privacy/",
+        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
+        "og:image:alt": "QuitGentle Today screen preview."
+      },
+      "name": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "QuitGentle Privacy Policy",
+        "twitter:description": "Device-first privacy details for QuitGentle, including optional sync, optional permissions, and data controls.",
+        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+      }
+    },
+    "press/index.html": {
+      "property": {
+        "og:type": "website",
+        "og:site_name": "QuitGentle",
+        "og:title": "QuitGentle Press and Media Kit",
+        "og:description": "QuitGentle press and media kit with product positioning, platform facts, approved screenshots, Sora references, and support contact details.",
+        "og:url": "https://quitgentle.com/press/",
+        "og:image": "https://quitgentle.com/assets/visuals/quitgentle-moments-strip.png",
+        "og:image:alt": "QuitGentle calm daily moments visual."
+      },
+      "name": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "QuitGentle Press and Media Kit",
+        "twitter:description": "Product positioning, launch facts, screenshots, and media assets for QuitGentle.",
+        "twitter:image": "https://quitgentle.com/assets/visuals/quitgentle-moments-strip.png"
+      }
+    },
+    "support/index.html": {
+      "property": {
+        "og:type": "website",
+        "og:site_name": "QuitGentle",
+        "og:title": "QuitGentle Support",
+        "og:description": "QuitGentle support help for installs, Cloud Sync, Apple Health / HealthKit, import and export, widgets, Apple Watch, and bug reports.",
+        "og:url": "https://quitgentle.com/support/",
+        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
+        "og:image:alt": "QuitGentle Today screen preview."
+      },
+      "name": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "QuitGentle Support",
+        "twitter:description": "Help for QuitGentle installs, sync, widgets, Apple Watch, exports, permissions, and bug reports.",
+        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+      }
+    },
+    "legal/index.html": {
+      "property": {
+        "og:type": "website",
+        "og:site_name": "QuitGentle",
+        "og:title": "QuitGentle Legal Notes",
+        "og:description": "QuitGentle legal notes covering non-medical use, emergency guidance, and the scope of supportive suggestions.",
+        "og:url": "https://quitgentle.com/legal/",
+        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
+        "og:image:alt": "QuitGentle Today screen preview."
+      },
+      "name": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "QuitGentle Legal Notes",
+        "twitter:description": "Legal scope notes for QuitGentle as supportive self-management software, not medical care.",
+        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+      }
+    },
+    "404.html": {
+      "property": {
+        "og:type": "website",
+        "og:site_name": "QuitGentle",
+        "og:title": "Page Not Found | QuitGentle",
+        "og:description": "QuitGentle public launch site page not found.",
+        "og:url": "https://quitgentle.com/404.html",
+        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
+        "og:image:alt": "QuitGentle Today screen preview."
+      },
+      "name": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Page Not Found | QuitGentle",
+        "twitter:description": "QuitGentle public launch site page not found.",
+        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+      }
+    }
+  },
+  "sharedNav": {
+    "privacy/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "./", "../support/", "../legal/"],
+    "press/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./", "../privacy/", "../support/", "../legal/"],
+    "support/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "../privacy/", "./", "../legal/"],
+    "legal/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "../privacy/", "../support/", "./"],
+    "404.html": ["./", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./press/", "./privacy/", "./support/", "./legal/"]
+  },
+  "requiredCtas": {
+    "index.html": ["https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./support/", "./privacy/"],
+    "privacy/index.html": ["../support/", "../legal/"],
+    "press/index.html": ["https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "mailto:support@quitgentle.com", "../support/", "../privacy/"],
+    "support/index.html": ["https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "../privacy/"],
+    "legal/index.html": ["../support/", "../privacy/"],
+    "404.html": ["./", "./support/"]
+  },
+  "requiredFooterLinks": {
+    "index.html": ["./", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./press/", "./privacy/", "./support/", "./legal/", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
+    "privacy/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "./", "../support/", "../legal/", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
+    "press/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./", "../privacy/", "../support/", "../legal/", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
+    "support/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "../privacy/", "./", "../legal/", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
+    "legal/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "../privacy/", "../support/", "./", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
+    "404.html": ["./", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./press/", "./privacy/", "./support/", "./legal/"]
+  },
+  "requiredCopyAnchors": {
+    "privacy/index.html": [
+      "QuitGentle stays device-first unless the user chooses more.",
+      "Data handling posture",
+      "Need help with privacy or sync?"
+    ],
+    "support/index.html": [
+      "Help for install issues, sync problems, widgets, Apple Watch, and support questions.",
+      "Current public support channel",
+      "If this is urgent"
+    ],
+    "press/index.html": [
+      "QuitGentle is calm smoking support for real quitting days.",
+      "Media assets",
+      "Approved short copy"
+    ],
+    "legal/index.html": [
+      "QuitGentle supports self-management. It is not medical care or emergency support.",
+      "What QuitGentle is not",
+      "Questions about current scope"
+    ]
+  },
+  "requiredLinkLabels": {
+    "index.html": [
+      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "Download on the App Store" },
+      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
+      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+    ],
+    "privacy/index.html": [
+      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
+      { "href": "mailto:privacy@quitgentle.com", "label": "privacy@quitgentle.com" },
+      { "href": "mailto:support@quitgentle.com", "label": "support@quitgentle.com" },
+      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+    ],
+    "press/index.html": [
+      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "Download on the App Store" },
+      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
+      { "href": "mailto:support@quitgentle.com", "label": "support@quitgentle.com" },
+      { "href": "mailto:privacy@quitgentle.com", "label": "privacy@quitgentle.com" },
+      { "href": "../assets/media-kit/quitgentle-promo-phrases.md", "label": "Promo phrases" },
+      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+    ],
+    "support/index.html": [
+      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
+      { "href": "mailto:support@quitgentle.com", "label": "support@quitgentle.com" },
+      { "href": "mailto:privacy@quitgentle.com", "label": "privacy@quitgentle.com" },
+      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Open Support Form" },
+      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+    ],
+    "legal/index.html": [
+      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
+      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+    ]
+  },
+  "contrastChecks": [
+    {
+      "name": "privacy/support/legal dark page panels",
+      "path": "styles.css",
+      "foreground": "#fffaf2",
+      "background": "#0e1d19",
+      "minimumRatio": 7.0,
+      "requiredTokens": [
+        ".page-hero-panel {",
+        ".page-panel,",
+        ".callout {",
+        "color: #fffaf2;",
+        "rgba(14, 29, 25, 0.97)",
+        "rgba(18, 48, 40, 0.94)",
+        "rgba(255, 250, 242, 0.82)"
+      ]
+    },
+    {
+      "name": "homepage final conversion panel",
+      "path": "styles.css",
+      "foreground": "#241814",
+      "background": "#fff4e4",
+      "minimumRatio": 7.0,
+      "requiredTokens": [
+        ".final-panel {",
+        "color: #241814;",
+        "#fff4e4",
+        ".legal-note {",
+        "color: #60483d;"
+      ]
+    }
+  ],
+  "layoutChecks": [
+    {
+      "name": "homepage hero overlap guard",
+      "path": "styles.css",
+      "rules": [
+        {
+          "selector": ".hero-layout",
+          "property": "min-height",
+          "minimumPx": 620
+        },
+        {
+          "selector": ".hero-stage",
+          "property": "min-height",
+          "minimumPx": 420
+        },
+        {
+          "selector": ".hero-device-main",
+          "property": "width",
+          "includes": "min("
+        },
+        {
+          "selector": ".hero-device-rescue",
+          "property": "width",
+          "includes": "min("
+        },
+        {
+          "selector": ".hero-note",
+          "property": "top",
+          "minimumPx": 18
+        },
+        {
+          "selector": ".watch-preview",
+          "property": "bottom",
+          "minimumPx": 18
+        },
+        {
+          "selector": ".rescue-grid",
+          "property": "display",
+          "equals": "grid"
+        }
+      ]
+    }
+  ]
+}
