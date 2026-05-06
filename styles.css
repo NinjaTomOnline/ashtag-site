@@ -376,7 +376,24 @@ main {
 
 .hero-stage {
   position: relative;
-  min-height: 430px;
+  isolation: isolate;
+  min-height: 0;
+  padding-top: clamp(430px, 124vw, 510px);
+}
+
+.hero-stage::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 36px 2px 78px;
+  border: 1px solid rgba(231, 193, 118, 0.16);
+  border-radius: 38px;
+  background:
+    linear-gradient(150deg, rgba(255, 247, 234, 0.1), transparent 34%),
+    linear-gradient(205deg, rgba(245, 143, 120, 0.18), transparent 62%),
+    rgba(255, 250, 242, 0.035);
+  box-shadow: inset 0 1px 0 rgba(255, 250, 242, 0.12), 0 32px 70px rgba(0, 0, 0, 0.3);
+  transform: perspective(680px) rotateX(5deg) rotateZ(-2deg);
 }
 
 .hero-device {
@@ -396,37 +413,67 @@ main {
 }
 
 .hero-device-main {
+  z-index: 1;
   right: 0;
   top: 0;
-  width: min(68%, 270px);
+  width: min(62%, 225px);
+  transform: rotate(1.4deg);
 }
 
 .hero-device-rescue {
+  z-index: 2;
   left: 0;
-  bottom: 0;
-  width: min(52%, 205px);
+  top: clamp(116px, 34vw, 148px);
+  width: min(43%, 158px);
+  transform: rotate(-2.2deg);
 }
 
-.watch-preview {
+.hero-watch {
   position: absolute;
-  right: 12px;
-  bottom: 28px;
-  display: grid;
-  place-items: center;
-  width: 132px;
-  height: 156px;
-  padding: 16px;
-  text-align: center;
-  border: 8px solid #0c0908;
-  border-radius: 44px;
+  z-index: 3;
+  right: 2px;
+  bottom: 64px;
+  width: min(26%, 96px);
+  margin: 0;
+  padding: 6px;
+  border: 1px solid rgba(231, 193, 118, 0.24);
+  border-radius: 28px;
   background:
-    linear-gradient(160deg, rgba(255, 247, 234, 0.13), transparent 42%),
-    linear-gradient(180deg, #221816, #0d0a09);
-  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.48), inset 0 0 0 1px rgba(231, 193, 118, 0.34);
+    linear-gradient(160deg, rgba(255, 247, 234, 0.12), transparent 42%),
+    #090807;
+  box-shadow: 0 24px 42px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 250, 242, 0.08);
+  transform: rotate(3deg);
 }
 
-.watch-preview span,
-.hero-note span,
+.hero-watch img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  background: #050505;
+}
+
+.hero-watch::before,
+.hero-watch::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 42%;
+  height: 10px;
+  border-radius: 999px;
+  background: #090807;
+  box-shadow: inset 0 0 0 1px rgba(255, 250, 242, 0.08);
+  transform: translateX(-50%);
+}
+
+.hero-watch::before {
+  top: -8px;
+}
+
+.hero-watch::after {
+  bottom: -8px;
+}
+
 .rescue-card span,
 .log-card span,
 .ecosystem-grid span {
@@ -435,40 +482,6 @@ main {
   font-weight: 900;
   line-height: 1.2;
   text-transform: uppercase;
-}
-
-.watch-preview strong {
-  color: var(--cream);
-  font-size: 1.02rem;
-  line-height: 1.12;
-}
-
-.watch-preview small {
-  color: var(--coral);
-  font-size: 0.8rem;
-  font-weight: 900;
-}
-
-.hero-note {
-  position: absolute;
-  left: 18px;
-  top: 28px;
-  width: min(260px, 66%);
-  padding: 16px;
-  border: 1px solid rgba(231, 193, 118, 0.28);
-  border-radius: var(--radius);
-  background: rgba(32, 22, 18, 0.86);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(18px);
-}
-
-.hero-note p {
-  margin-top: 8px;
-  color: var(--cream);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.22rem;
-  font-weight: 800;
-  line-height: 1.18;
 }
 
 .section {
@@ -1064,19 +1077,30 @@ code {
 
   .hero-stage {
     min-height: 530px;
+    padding-top: 0;
+  }
+
+  .hero-stage::before {
+    inset: 42px 10px 42px;
+    border-radius: 46px;
   }
 
   .hero-device-main {
-    width: min(62%, 315px);
+    right: 8px;
+    width: min(58%, 300px);
   }
 
   .hero-device-rescue {
-    width: min(42%, 230px);
+    top: auto;
+    bottom: 20px;
+    left: 14px;
+    width: min(34%, 190px);
   }
 
-  .watch-preview {
-    right: 34px;
-    bottom: 34px;
+  .hero-watch {
+    right: 24px;
+    bottom: 46px;
+    width: min(23%, 116px);
   }
 
   .truth-layout,
@@ -1124,20 +1148,24 @@ code {
   }
 
   .hero-stage {
-    min-height: 570px;
+    min-height: 590px;
   }
 
   .hero-device-main {
-    width: min(64%, 344px);
+    right: -4px;
+    width: min(61%, 330px);
   }
 
   .hero-device-rescue {
-    width: min(44%, 242px);
+    bottom: 26px;
+    left: 0;
+    width: min(35%, 205px);
   }
 
-  .hero-note {
-    left: 0;
-    top: 86px;
+  .hero-watch {
+    right: 32px;
+    bottom: 58px;
+    width: 126px;
   }
 
   .rescue-grid {
@@ -1186,6 +1214,19 @@ code {
   }
 }
 
+@media (min-width: 1400px) {
+  .hero-device-main {
+    right: -14px;
+    width: min(58%, 324px);
+  }
+
+  .hero-watch {
+    right: -78px;
+    bottom: 104px;
+    width: 112px;
+  }
+}
+
 @media (max-width: 559px) {
   .hero-actions,
   .inline-links,
@@ -1216,17 +1257,10 @@ code {
     width: min(50%, 178px);
   }
 
-  .watch-preview {
-    width: 112px;
-    height: 136px;
-    border-radius: 38px;
+  .hero-watch {
+    width: min(27%, 92px);
     right: 0;
-    bottom: 18px;
-  }
-
-  .hero-note {
-    left: 0;
-    top: 18px;
+    bottom: 54px;
   }
 
   .patterns-media {

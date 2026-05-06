@@ -267,8 +267,8 @@
         },
         {
           "selector": ".hero-stage",
-          "property": "min-height",
-          "minimumPx": 420
+          "property": "padding-top",
+          "includes": "clamp("
         },
         {
           "selector": ".hero-device-main",
@@ -281,14 +281,9 @@
           "includes": "min("
         },
         {
-          "selector": ".hero-note",
-          "property": "top",
-          "minimumPx": 18
-        },
-        {
-          "selector": ".watch-preview",
+          "selector": ".hero-watch",
           "property": "bottom",
-          "minimumPx": 18
+          "minimumPx": 54
         },
         {
           "selector": ".rescue-grid",
