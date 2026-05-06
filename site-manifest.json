@@ -1,6 +1,6 @@
 {
   "name": "QuitGentle",
-  "tagline": "Calm smoking tracking for cravings, rescue moments, and real progress.",
+  "tagline": "Shame-free smoking tracking for fast logs, craving rescue, and pattern awareness.",
   "category": "iOS App",
   "status": "Live on App Store",
   "website": "https://quitgentle.com/",
@@ -15,7 +15,7 @@
   "icon": "https://raw.githubusercontent.com/NinjaTomOnline/ashtag-site/main/assets/icons/quitgentle-app-icon.png",
   "previewImage": "https://raw.githubusercontent.com/NinjaTomOnline/ashtag-site/main/assets/screenshots/quitgentle-today-marketing.png",
   "previewImageAlt": "QuitGentle Today screen preview",
-  "accent": "#16745d",
+  "accent": "#e7c176",
   "featured": false,
   "sortOrder": 230
 }
