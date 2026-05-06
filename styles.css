@@ -271,7 +271,7 @@ main {
 }
 
 .hero-subhead {
-  max-width: 34rem;
+  max-width: 100%;
   margin-bottom: 14px;
   color: var(--cream);
   font-size: 1.2rem;
@@ -1073,6 +1073,10 @@ code {
 
   .hero-layout {
     padding-top: 68px;
+  }
+
+  .hero-subhead {
+    white-space: nowrap;
   }
 
   .hero-stage {
