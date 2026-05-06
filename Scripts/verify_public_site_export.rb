@@ -2,6 +2,7 @@
 
 require "json"
 require "cgi"
+require "digest"
 
 args = ARGV.dup
 verbose = args.delete("--verbose")
@@ -130,6 +131,49 @@ def first_css_shorthand_value(value)
   value.to_s.strip.split(/\s+/).first
 end
 
+def verify_asset_checksum_manifest(repo_root, manifest_relative_path, failures)
+  full_path = File.join(repo_root, manifest_relative_path)
+  content = read_file(full_path)
+
+  unless content
+    add_failure(failures, "assetChecksums", manifest_relative_path, "missing asset checksum manifest")
+    return 0
+  end
+
+  checksum_manifest = JSON.parse(content)
+  assets = checksum_manifest.fetch("assets", [])
+
+  unless checksum_manifest["maintainerNote"].is_a?(String) && !checksum_manifest["maintainerNote"].strip.empty?
+    add_failure(failures, "assetChecksums", manifest_relative_path, "missing maintainer note")
+  end
+
+  assets.each do |asset|
+    relative_path = asset.fetch("path")
+    expected_sha256 = asset.fetch("sha256")
+    asset_path = File.join(repo_root, relative_path)
+
+    unless expected_sha256.match?(/\A[0-9a-f]{64}\z/)
+      add_failure(failures, "assetChecksums", manifest_relative_path, "#{relative_path} has invalid sha256")
+      next
+    end
+
+    unless File.file?(asset_path)
+      add_failure(failures, "assetChecksums", relative_path, "missing asset referenced by checksum manifest")
+      next
+    end
+
+    actual_sha256 = Digest::SHA256.file(asset_path).hexdigest
+    unless actual_sha256 == expected_sha256
+      add_failure(failures, "assetChecksums", relative_path, "sha256 mismatch: expected #{expected_sha256}, found #{actual_sha256}")
+    end
+  end
+
+  assets.length
+rescue JSON::ParserError => error
+  add_failure(failures, "assetChecksums", manifest_relative_path, "invalid JSON: #{error.message}")
+  0
+end
+
 repo_root = File.expand_path(args.fetch(0))
 manifest_path = File.expand_path(args.fetch(1))
 manifest = JSON.parse(File.read(manifest_path))
@@ -168,7 +212,8 @@ required_repo_files = {
   "docs/PUBLIC_SITE_EXPORT_ASSERTIONS.json" => /socialMetadata/i,
   ".github/ISSUE_TEMPLATE/support.yml" => /QuitGentle Support Request/i,
   ".github/ISSUE_TEMPLATE/config.yml" => /QuitGentle Support Page/i,
-  "assets/badges/download-on-the-app-store.svg" => /Download_on_the_App_Store/i
+  "assets/badges/download-on-the-app-store.svg" => /Download_on_the_App_Store/i,
+  "assets/screenshots/quitgentle-ecosystem-assets.json" => /quitgentle-watch-marketing\.png/i
 }
 
 maintainer_note = manifest["maintainerNote"]
@@ -196,6 +241,8 @@ required_above_fold_assets = manifest.fetch("requiredAboveFoldAssets", {})
 contrast_checks = manifest.fetch("contrastChecks", [])
 layout_checks = manifest.fetch("layoutChecks", [])
 social_metadata = manifest.fetch("socialMetadata", {})
+asset_checksum_manifest = manifest.fetch("assetChecksumManifest", nil)
+asset_checksum_count = asset_checksum_manifest ? verify_asset_checksum_manifest(repo_root, asset_checksum_manifest, failures) : 0
 
 section_counts = {
   "repoFiles" => required_repo_files.length,
@@ -207,6 +254,7 @@ section_counts = {
   "copyAnchors" => required_copy_anchors.length,
   "linkLabels" => required_link_labels.length,
   "aboveFoldAssets" => required_above_fold_assets.sum { |_relative_path, checks| checks.length },
+  "assetChecksums" => asset_checksum_count,
   "contrastChecks" => contrast_checks.length,
   "layoutChecks" => layout_checks.sum { |check| check.fetch("rules", []).length }
 }
@@ -431,6 +479,7 @@ if verbose
   puts "  copy anchors: #{section_counts["copyAnchors"]} pages checked"
   puts "  link labels: #{section_counts["linkLabels"]} pages checked"
   puts "  above-fold assets: #{section_counts["aboveFoldAssets"]} checked"
+  puts "  asset checksums: #{section_counts["assetChecksums"]} checked"
   puts "  contrast checks: #{section_counts["contrastChecks"]} checked"
   puts "  layout checks: #{section_counts["layoutChecks"]} checked"
 end

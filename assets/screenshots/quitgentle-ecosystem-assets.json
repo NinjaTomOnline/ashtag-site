@@ -1,0 +1,28 @@
+{
+  "maintainerNote": "Update this file in the same change whenever the Apple Watch, widget, or Live Activity marketing PNGs are intentionally replaced.",
+  "generatedAt": "2026-05-06",
+  "source": "/tmp/quitgentle-real-shipping-marketing-assets-20260506",
+  "assets": [
+    {
+      "path": "assets/screenshots/quitgentle-watch-marketing.png",
+      "surface": "Apple Watch quick logging",
+      "width": 422,
+      "height": 514,
+      "sha256": "468e5cf7498b2ac2e08f09c938b1638f1ec55b81519285522516bf6771881953"
+    },
+    {
+      "path": "assets/screenshots/quitgentle-widget-marketing.png",
+      "surface": "Home Screen widget marketing surface",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "7e65b4fbbfa3a7e847d7ead635dc340b1bf321e071c3def21910783fd7cff84a"
+    },
+    {
+      "path": "assets/screenshots/quitgentle-live-activity-marketing.png",
+      "surface": "Live Activity marketing surface",
+      "width": 1206,
+      "height": 2622,
+      "sha256": "88748de38937b9548b92f66c7eada738f201676361c0c01d6bfe9406c941309f"
+    }
+  ]
+}

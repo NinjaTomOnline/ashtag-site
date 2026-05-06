@@ -1,5 +1,6 @@
 {
   "maintainerNote": "When public-site titles, descriptions, Open Graph/Twitter tags, CTA links, link labels, shared-nav links, footer links, or trust-page hero and callout copy change, update this manifest in the same PR so CI stays aligned with the exported site.",
+  "assetChecksumManifest": "assets/screenshots/quitgentle-ecosystem-assets.json",
   "pages": {
     "index.html": {
       "title": "QuitGentle Smoking Tracker",
