@@ -19,7 +19,7 @@ try {
 const args = process.argv.slice(2);
 
 function usage() {
-  console.error("Usage: node Scripts/verify_public_site_visuals.cjs [site_dir_or_url] [--widths 1024,1180,1462] [--height 900] [--screenshot-dir <dir>]");
+  console.error("Usage: node Scripts/verify_public_site_visuals.cjs [site_dir_or_url] [--widths 1024,1180,1190,1240,1280,1462] [--height 900] [--screenshot-dir <dir>]");
 }
 
 function readOption(name, fallback) {
@@ -45,7 +45,7 @@ function readOption(name, fallback) {
 }
 
 const target = args.find((arg) => !arg.startsWith("--") && !args[args.indexOf(arg) - 1]?.startsWith("--")) || "site";
-const widths = readOption("--widths", "1024,1180,1462")
+const widths = readOption("--widths", "1024,1180,1190,1240,1280,1462")
   .split(",")
   .map((width) => Number.parseInt(width.trim(), 10))
   .filter((width) => Number.isFinite(width) && width > 0);
@@ -140,41 +140,61 @@ async function main() {
       await page.goto(`${served.baseUrl}${served.baseUrl.includes("?") ? "&" : "?"}visual-width=${width}`, { waitUntil: "networkidle" });
 
       const result = await page.evaluate(() => {
-        const subhead = document.querySelector(".hero-subhead");
         const stage = document.querySelector(".hero-stage");
 
-        if (!subhead) {
-          return { ok: false, reason: "missing .hero-subhead" };
+        function textMetric(selector) {
+          const element = document.querySelector(selector);
+
+          if (!element) {
+            return { ok: false, reason: `missing ${selector}` };
+          }
+
+          const rect = element.getBoundingClientRect();
+          const style = window.getComputedStyle(element);
+          const lineHeight = Number.parseFloat(style.lineHeight);
+          const lineCount = lineHeight > 0 ? Math.round(rect.height / lineHeight) : null;
+          const stageRect = stage ? stage.getBoundingClientRect() : null;
+          const visualRight = Math.round(rect.left + element.scrollWidth);
+          const stageClearance = stageRect ? Math.round(stageRect.left - visualRight) : null;
+
+          return {
+            ok: true,
+            text: element.textContent.trim().replace(/\s+/g, " "),
+            lineCount,
+            lineHeight,
+            fontSize: style.fontSize,
+            whiteSpace: style.whiteSpace,
+            clientWidth: element.clientWidth,
+            scrollWidth: element.scrollWidth,
+            overflowPx: element.scrollWidth - element.clientWidth,
+            stageClearance,
+            overlapsStage: Boolean(stageRect && stageRect.top < rect.bottom && visualRight > stageRect.left)
+          };
         }
 
-        const rect = subhead.getBoundingClientRect();
-        const style = window.getComputedStyle(subhead);
-        const lineHeight = Number.parseFloat(style.lineHeight);
-        const lineCount = lineHeight > 0 ? Math.round(rect.height / lineHeight) : null;
-        const stageRect = stage ? stage.getBoundingClientRect() : null;
-        const visualRight = Math.round(rect.left + subhead.scrollWidth);
-        const stageClearance = stageRect ? Math.round(stageRect.left - visualRight) : null;
+        const heroTitle = textMetric(".hero-content h1");
+        const heroSubhead = textMetric(".hero-subhead");
+
+        if (!heroTitle.ok) {
+          return { ok: false, reason: heroTitle.reason };
+        }
+
+        if (!heroSubhead.ok) {
+          return { ok: false, reason: heroSubhead.reason };
+        }
 
         return {
           ok: true,
-          text: subhead.textContent.trim().replace(/\s+/g, " "),
-          lineCount,
-          lineHeight,
-          fontSize: style.fontSize,
-          whiteSpace: style.whiteSpace,
-          clientWidth: subhead.clientWidth,
-          scrollWidth: subhead.scrollWidth,
-          overflowPx: subhead.scrollWidth - subhead.clientWidth,
+          heroTitle,
+          heroSubhead,
           bodyWidth: document.documentElement.scrollWidth,
-          viewportWidth: window.innerWidth,
-          stageClearance,
-          overlapsStage: Boolean(stageRect && stageRect.top < rect.bottom && visualRight > stageRect.left)
+          viewportWidth: window.innerWidth
         };
       });
 
       if (screenshotDir) {
         await page.screenshot({
-          path: path.join(screenshotDir, `quitgentle-home-hero-subhead-${width}w.png`),
+          path: path.join(screenshotDir, `quitgentle-home-hero-${width}w.png`),
           fullPage: false
         });
       }
@@ -186,24 +206,36 @@ async function main() {
         continue;
       }
 
-      if (result.lineCount !== 1) {
-        failures.push(`${width}px: .hero-subhead rendered ${result.lineCount} lines`);
+      if (result.heroTitle.lineCount > 5) {
+        failures.push(`${width}px: .hero-content h1 rendered ${result.heroTitle.lineCount} lines`);
       }
 
-      if (result.overflowPx > 1) {
-        failures.push(`${width}px: .hero-subhead overflows its box by ${result.overflowPx}px`);
+      if (result.heroTitle.overflowPx > 1) {
+        failures.push(`${width}px: .hero-content h1 overflows its box by ${result.heroTitle.overflowPx}px`);
+      }
+
+      if (result.heroTitle.stageClearance !== null && result.heroTitle.stageClearance < 24) {
+        failures.push(`${width}px: .hero-content h1 has only ${result.heroTitle.stageClearance}px before the device stage`);
+      }
+
+      if (result.heroSubhead.lineCount !== 1) {
+        failures.push(`${width}px: .hero-subhead rendered ${result.heroSubhead.lineCount} lines`);
+      }
+
+      if (result.heroSubhead.overflowPx > 1) {
+        failures.push(`${width}px: .hero-subhead overflows its box by ${result.heroSubhead.overflowPx}px`);
       }
 
       if (result.bodyWidth > result.viewportWidth + 1) {
         failures.push(`${width}px: page has horizontal overflow (${result.bodyWidth}px body for ${result.viewportWidth}px viewport)`);
       }
 
-      if (result.overlapsStage) {
+      if (result.heroSubhead.overlapsStage) {
         failures.push(`${width}px: .hero-subhead overlaps the hero device stage`);
       }
 
       console.log(
-        `visual ok ${width}px: lineCount=${result.lineCount}, overflowPx=${result.overflowPx}, fontSize=${result.fontSize}, stageClearance=${result.stageClearance}`
+        `visual ok ${width}px: h1Lines=${result.heroTitle.lineCount}, h1Font=${result.heroTitle.fontSize}, subheadLines=${result.heroSubhead.lineCount}, subheadOverflowPx=${result.heroSubhead.overflowPx}, stageClearance=${result.heroSubhead.stageClearance}`
       );
     }
   } finally {
@@ -214,7 +246,7 @@ async function main() {
   if (failures.length > 0) {
     console.error("verify_public_site_visuals: failed");
     failures.forEach((failure) => console.error(`- ${failure}`));
-    console.error("If this only fails after a font or hero-width change, shorten the subhead before shrinking it below the current 1rem floor.");
+    console.error("If this only fails after a font or hero-width change, shorten the subhead before shrinking it below the current 1rem floor, and keep the H1 at 5 lines or fewer on desktop widths.");
     process.exit(1);
   }
 

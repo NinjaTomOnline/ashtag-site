@@ -274,7 +274,7 @@ main {
   max-width: 100%;
   margin-bottom: 14px;
   color: var(--cream);
-  font-size: clamp(1rem, 1.55vw, 1.2rem);
+  font-size: 1rem;
   font-weight: 900;
   line-height: 1.25;
 }
@@ -1137,7 +1137,7 @@ code {
 
 @media (min-width: 980px) {
   h1 {
-    font-size: 4.85rem;
+    font-size: 4.35rem;
   }
 
   h2 {
@@ -1215,6 +1215,24 @@ code {
 
   .quote-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1120px) {
+  h1 {
+    font-size: 4.85rem;
+  }
+}
+
+@media (min-width: 1180px) {
+  .hero-subhead {
+    font-size: 1.14rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .hero-subhead {
+    font-size: 1.2rem;
   }
 }
 

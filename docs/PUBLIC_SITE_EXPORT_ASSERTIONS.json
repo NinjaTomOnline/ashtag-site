@@ -281,9 +281,14 @@
           "includes": "min("
         },
         {
+          "selector": ".hero-content h1",
+          "property": "max-width",
+          "equals": "12.5ch"
+        },
+        {
           "selector": ".hero-subhead",
           "property": "font-size",
-          "includes": "clamp("
+          "equals": "1rem"
         },
         {
           "selector": ".hero-watch",
