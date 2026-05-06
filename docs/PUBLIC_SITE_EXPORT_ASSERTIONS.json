@@ -281,6 +281,11 @@
           "includes": "min("
         },
         {
+          "selector": ".hero-subhead",
+          "property": "font-size",
+          "includes": "clamp("
+        },
+        {
           "selector": ".hero-watch",
           "property": "bottom",
           "minimumPx": 54

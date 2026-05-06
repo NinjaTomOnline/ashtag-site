@@ -274,7 +274,7 @@ main {
   max-width: 100%;
   margin-bottom: 14px;
   color: var(--cream);
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.55vw, 1.2rem);
   font-weight: 900;
   line-height: 1.25;
 }

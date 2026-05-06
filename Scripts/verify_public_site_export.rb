@@ -164,6 +164,7 @@ required_repo_files = {
   ".github/workflows/verify-public-site.yml" => /Verify Public Site/i,
   "README.md" => /QuitGentle Public Site/i,
   "Scripts/verify_public_site_export.rb" => /socialMetadata/i,
+  "Scripts/verify_public_site_visuals.cjs" => /hero-subhead/i,
   "docs/PUBLIC_SITE_EXPORT_ASSERTIONS.json" => /socialMetadata/i,
   ".github/ISSUE_TEMPLATE/support.yml" => /QuitGentle Support Request/i,
   ".github/ISSUE_TEMPLATE/config.yml" => /QuitGentle Support Page/i,
