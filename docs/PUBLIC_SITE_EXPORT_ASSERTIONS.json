@@ -35,14 +35,19 @@
         "og:title": "QuitGentle Smoking Tracker",
         "og:description": "Log honestly. Survive the craving. Notice the pattern. Keep going with shame-free smoking tracking and rescue tools.",
         "og:url": "https://quitgentle.com/",
-        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
-        "og:image:alt": "QuitGentle Today screen with smoking progress and quick support tools."
+        "og:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png",
+        "og:image:secure_url": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png",
+        "og:image:type": "image/png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "QuitGentle social preview with app icon, launch copy, and three app screens."
       },
       "name": {
         "twitter:card": "summary_large_image",
         "twitter:title": "QuitGentle Smoking Tracker",
         "twitter:description": "A calmer way to log cigarettes, ride out cravings, and see patterns without the shame spiral.",
-        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+        "twitter:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png",
+        "twitter:image:alt": "QuitGentle social preview with app icon, launch copy, and three app screens."
       }
     },
     "privacy/index.html": {
@@ -52,14 +57,14 @@
         "og:title": "QuitGentle Privacy Policy",
         "og:description": "QuitGentle privacy policy covering stored data, optional permissions, optional Apple Health / HealthKit context, Cloud Sync, and export or deletion controls.",
         "og:url": "https://quitgentle.com/privacy/",
-        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
-        "og:image:alt": "QuitGentle Today screen preview."
+        "og:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png",
+        "og:image:alt": "QuitGentle social preview with app icon, launch copy, and three app screens."
       },
       "name": {
         "twitter:card": "summary_large_image",
         "twitter:title": "QuitGentle Privacy Policy",
         "twitter:description": "Device-first privacy details for QuitGentle, including optional sync, optional permissions, and data controls.",
-        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+        "twitter:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png"
       }
     },
     "press/index.html": {
@@ -86,14 +91,14 @@
         "og:title": "QuitGentle Support",
         "og:description": "QuitGentle support help for installs, Cloud Sync, Apple Health / HealthKit, import and export, widgets, Apple Watch, and bug reports.",
         "og:url": "https://quitgentle.com/support/",
-        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
-        "og:image:alt": "QuitGentle Today screen preview."
+        "og:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png",
+        "og:image:alt": "QuitGentle social preview with app icon, launch copy, and three app screens."
       },
       "name": {
         "twitter:card": "summary_large_image",
         "twitter:title": "QuitGentle Support",
         "twitter:description": "Help for QuitGentle installs, sync, widgets, Apple Watch, exports, permissions, and bug reports.",
-        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+        "twitter:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png"
       }
     },
     "legal/index.html": {
@@ -103,14 +108,14 @@
         "og:title": "QuitGentle Legal Notes",
         "og:description": "QuitGentle legal notes covering non-medical use, emergency guidance, and the scope of supportive suggestions.",
         "og:url": "https://quitgentle.com/legal/",
-        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
-        "og:image:alt": "QuitGentle Today screen preview."
+        "og:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png",
+        "og:image:alt": "QuitGentle social preview with app icon, launch copy, and three app screens."
       },
       "name": {
         "twitter:card": "summary_large_image",
         "twitter:title": "QuitGentle Legal Notes",
         "twitter:description": "Legal scope notes for QuitGentle as supportive self-management software, not medical care.",
-        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+        "twitter:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png"
       }
     },
     "404.html": {
@@ -120,14 +125,14 @@
         "og:title": "Page Not Found | QuitGentle",
         "og:description": "QuitGentle public launch site page not found.",
         "og:url": "https://quitgentle.com/404.html",
-        "og:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png",
-        "og:image:alt": "QuitGentle Today screen preview."
+        "og:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png",
+        "og:image:alt": "QuitGentle social preview with app icon, launch copy, and three app screens."
       },
       "name": {
         "twitter:card": "summary_large_image",
         "twitter:title": "Page Not Found | QuitGentle",
         "twitter:description": "QuitGentle public launch site page not found.",
-        "twitter:image": "https://quitgentle.com/assets/screenshots/quitgentle-today-marketing.png"
+        "twitter:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507.png"
       }
     }
   },
