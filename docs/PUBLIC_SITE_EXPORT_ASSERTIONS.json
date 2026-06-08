@@ -20,7 +20,7 @@
     },
     "legal/index.html": {
       "title": "QuitGentle Legal Notes",
-      "description": "QuitGentle legal notes covering non-medical use, emergency guidance, and the scope of supportive suggestions."
+      "description": "QuitGentle legal notes and Terms of Use / EULA link covering App Store subscriptions, non-medical use, emergency guidance, and supportive suggestions."
     },
     "404.html": {
       "title": "Page Not Found | QuitGentle",
@@ -106,7 +106,7 @@
         "og:type": "website",
         "og:site_name": "QuitGentle",
         "og:title": "QuitGentle Legal Notes",
-        "og:description": "QuitGentle legal notes covering non-medical use, emergency guidance, and the scope of supportive suggestions.",
+        "og:description": "QuitGentle legal notes and Terms of Use / EULA link covering App Store subscriptions, non-medical use, emergency guidance, and supportive suggestions.",
         "og:url": "https://quitgentle.com/legal/",
         "og:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507-v2.png",
         "og:image:alt": "QuitGentle social preview with app icon, launch copy, and three app screens."
@@ -114,7 +114,7 @@
       "name": {
         "twitter:card": "summary_large_image",
         "twitter:title": "QuitGentle Legal Notes",
-        "twitter:description": "Legal scope notes for QuitGentle as supportive self-management software, not medical care.",
+        "twitter:description": "Legal notes, Terms of Use / EULA link, and non-medical scope for QuitGentle.",
         "twitter:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507-v2.png"
       }
     },
@@ -137,27 +137,130 @@
     }
   },
   "sharedNav": {
-    "privacy/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "./", "../support/", "../legal/"],
-    "press/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./", "../privacy/", "../support/", "../legal/"],
-    "support/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "../privacy/", "./", "../legal/"],
-    "legal/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "../privacy/", "../support/", "./"],
-    "404.html": ["./", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./press/", "./privacy/", "./support/", "./legal/"]
+    "privacy/index.html": [
+      "../",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "../press/",
+      "./",
+      "../support/",
+      "../legal/"
+    ],
+    "press/index.html": [
+      "../",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "./",
+      "../privacy/",
+      "../support/",
+      "../legal/"
+    ],
+    "support/index.html": [
+      "../",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "../press/",
+      "../privacy/",
+      "./",
+      "../legal/"
+    ],
+    "legal/index.html": [
+      "../",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "../press/",
+      "../privacy/",
+      "../support/",
+      "./"
+    ],
+    "404.html": [
+      "./",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "./press/",
+      "./privacy/",
+      "./support/",
+      "./legal/"
+    ]
   },
   "requiredCtas": {
-    "index.html": ["https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./support/", "./privacy/"],
-    "privacy/index.html": ["../support/", "../legal/"],
-    "press/index.html": ["https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "mailto:support@quitgentle.com", "../support/", "../privacy/"],
-    "support/index.html": ["https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "../privacy/"],
-    "legal/index.html": ["../support/", "../privacy/"],
-    "404.html": ["./", "./support/"]
+    "index.html": [
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "./support/",
+      "./privacy/"
+    ],
+    "privacy/index.html": [
+      "../support/",
+      "../legal/"
+    ],
+    "press/index.html": [
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "mailto:support@quitgentle.com",
+      "../support/",
+      "../privacy/"
+    ],
+    "support/index.html": [
+      "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose",
+      "../privacy/"
+    ],
+    "legal/index.html": [
+      "../support/",
+      "../privacy/"
+    ],
+    "404.html": [
+      "./",
+      "./support/"
+    ]
   },
   "requiredFooterLinks": {
-    "index.html": ["./", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./press/", "./privacy/", "./support/", "./legal/", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
-    "privacy/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "./", "../support/", "../legal/", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
-    "press/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./", "../privacy/", "../support/", "../legal/", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
-    "support/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "../privacy/", "./", "../legal/", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
-    "legal/index.html": ["../", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "../press/", "../privacy/", "../support/", "./", "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"],
-    "404.html": ["./", "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "./press/", "./privacy/", "./support/", "./legal/"]
+    "index.html": [
+      "./",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "./press/",
+      "./privacy/",
+      "./support/",
+      "./legal/",
+      "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"
+    ],
+    "privacy/index.html": [
+      "../",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "../press/",
+      "./",
+      "../support/",
+      "../legal/",
+      "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"
+    ],
+    "press/index.html": [
+      "../",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "./",
+      "../privacy/",
+      "../support/",
+      "../legal/",
+      "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"
+    ],
+    "support/index.html": [
+      "../",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "../press/",
+      "../privacy/",
+      "./",
+      "../legal/",
+      "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"
+    ],
+    "legal/index.html": [
+      "../",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "../press/",
+      "../privacy/",
+      "../support/",
+      "./",
+      "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose"
+    ],
+    "404.html": [
+      "./",
+      "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+      "./press/",
+      "./privacy/",
+      "./support/",
+      "./legal/"
+    ]
   },
   "requiredCopyAnchors": {
     "privacy/index.html": [
@@ -177,40 +280,105 @@
     ],
     "legal/index.html": [
       "QuitGentle supports self-management. It is not medical care or emergency support.",
+      "Terms of Use (EULA)",
       "What QuitGentle is not",
       "Questions about current scope"
     ]
   },
   "requiredLinkLabels": {
     "index.html": [
-      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "Download on the App Store" },
-      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
-      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+      {
+        "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+        "label": "Download on the App Store"
+      },
+      {
+        "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+        "label": "App Store"
+      },
+      {
+        "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose",
+        "label": "Support Form"
+      }
     ],
     "privacy/index.html": [
-      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
-      { "href": "mailto:privacy@quitgentle.com", "label": "privacy@quitgentle.com" },
-      { "href": "mailto:support@quitgentle.com", "label": "support@quitgentle.com" },
-      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+      {
+        "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+        "label": "App Store"
+      },
+      {
+        "href": "mailto:privacy@quitgentle.com",
+        "label": "privacy@quitgentle.com"
+      },
+      {
+        "href": "mailto:support@quitgentle.com",
+        "label": "support@quitgentle.com"
+      },
+      {
+        "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose",
+        "label": "Support Form"
+      }
     ],
     "press/index.html": [
-      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "Download on the App Store" },
-      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
-      { "href": "mailto:support@quitgentle.com", "label": "support@quitgentle.com" },
-      { "href": "mailto:privacy@quitgentle.com", "label": "privacy@quitgentle.com" },
-      { "href": "../assets/media-kit/quitgentle-promo-phrases.md", "label": "Promo phrases" },
-      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+      {
+        "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+        "label": "Download on the App Store"
+      },
+      {
+        "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+        "label": "App Store"
+      },
+      {
+        "href": "mailto:support@quitgentle.com",
+        "label": "support@quitgentle.com"
+      },
+      {
+        "href": "mailto:privacy@quitgentle.com",
+        "label": "privacy@quitgentle.com"
+      },
+      {
+        "href": "../assets/media-kit/quitgentle-promo-phrases.md",
+        "label": "Promo phrases"
+      },
+      {
+        "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose",
+        "label": "Support Form"
+      }
     ],
     "support/index.html": [
-      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
-      { "href": "mailto:support@quitgentle.com", "label": "support@quitgentle.com" },
-      { "href": "mailto:privacy@quitgentle.com", "label": "privacy@quitgentle.com" },
-      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Open Support Form" },
-      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+      {
+        "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+        "label": "App Store"
+      },
+      {
+        "href": "mailto:support@quitgentle.com",
+        "label": "support@quitgentle.com"
+      },
+      {
+        "href": "mailto:privacy@quitgentle.com",
+        "label": "privacy@quitgentle.com"
+      },
+      {
+        "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose",
+        "label": "Open Support Form"
+      },
+      {
+        "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose",
+        "label": "Support Form"
+      }
     ],
     "legal/index.html": [
-      { "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030", "label": "App Store" },
-      { "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose", "label": "Support Form" }
+      {
+        "href": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
+        "label": "App Store"
+      },
+      {
+        "href": "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+        "label": "Apple Standard EULA"
+      },
+      {
+        "href": "https://github.com/NinjaTomOnline/ashtag-site/issues/new/choose",
+        "label": "Support Form"
+      }
     ]
   },
   "requiredAboveFoldAssets": {
