@@ -1,21 +1,27 @@
 {
   "name": "QuitGentle",
-  "tagline": "Shame-free smoking tracking for fast logs, craving rescue, and pattern awareness.",
+  "tagline": "Shame-free smoking tracking with fast logs, craving rescue, pattern awareness, and optional Premium insight.",
   "category": "iOS App",
-  "status": "Live on App Store",
+  "status": "Live on App Store with optional Premium",
   "website": "https://quitgentle.com/",
   "pressUrl": "https://quitgentle.com/press/",
   "supportUrl": "https://quitgentle.com/support/",
   "privacyUrl": "https://quitgentle.com/privacy/",
   "appStoreUrl": "https://apps.apple.com/us/app/quitgentle-smoking-tracker/id6761405030",
   "appStoreId": "6761405030",
-  "appStoreVersion": "1.0.1",
-  "appStorePrice": "Free",
-  "appStoreReleaseDate": "2026-05-07",
+  "appStoreVersion": "1.1",
+  "appStorePrice": "Free download; optional Premium",
+  "appStoreReleaseDate": "2026-06-10",
   "icon": "https://raw.githubusercontent.com/NinjaTomOnline/ashtag-site/main/assets/icons/quitgentle-app-icon.png",
   "previewImage": "https://raw.githubusercontent.com/NinjaTomOnline/ashtag-site/main/assets/social/quitgentle-facebook-preview-20260507-v2.png",
   "previewImageAlt": "QuitGentle social preview with app icon, launch copy, and three app screens",
   "accent": "#e7c176",
   "featured": false,
-  "sortOrder": 230
+  "sortOrder": 230,
+  "premiumStatus": "Approved and live",
+  "premiumFeatures": [
+    "Weekly Quit Review",
+    "Advanced Pattern Insights",
+    "Advanced Hotspot Insights"
+  ]
 }

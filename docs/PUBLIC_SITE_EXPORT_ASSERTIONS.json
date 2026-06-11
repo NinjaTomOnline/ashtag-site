@@ -4,7 +4,7 @@
   "pages": {
     "index.html": {
       "title": "QuitGentle Smoking Tracker",
-      "description": "QuitGentle is a shame-free smoking tracker with fast cigarette and craving logs, quiet rescue tools, pattern awareness, optional sync, and no account required."
+      "description": "QuitGentle is a shame-free smoking tracker with fast logs, quiet rescue tools, pattern awareness, optional sync, and optional Premium insights for deeper weekly reflection."
     },
     "privacy/index.html": {
       "title": "QuitGentle Privacy Policy",
@@ -12,11 +12,11 @@
     },
     "press/index.html": {
       "title": "QuitGentle Press and Media Kit",
-      "description": "QuitGentle press and media kit with product positioning, platform facts, approved screenshots, Sora references, and support contact details."
+      "description": "QuitGentle press and media kit with product positioning, Premium 1.1 facts, approved screenshots, Sora references, and support contact details."
     },
     "support/index.html": {
       "title": "QuitGentle Support",
-      "description": "QuitGentle support help for installs, Cloud Sync, Apple Health / HealthKit, import and export, widgets, Apple Watch, and bug reports."
+      "description": "QuitGentle support help for installs, Premium purchases, Restore Purchases, Cloud Sync, Apple Health / HealthKit, widgets, Apple Watch, and bug reports."
     },
     "legal/index.html": {
       "title": "QuitGentle Legal Notes",
@@ -33,7 +33,7 @@
         "og:type": "website",
         "og:site_name": "QuitGentle",
         "og:title": "QuitGentle Smoking Tracker",
-        "og:description": "Log honestly. Survive the craving. Notice the pattern. Keep going with shame-free smoking tracking and rescue tools.",
+        "og:description": "Log honestly. Survive the craving. Notice the pattern. Optional Premium adds weekly reviews and deeper insight without locking core support tools.",
         "og:url": "https://quitgentle.com/",
         "og:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507-v2.png",
         "og:image:secure_url": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507-v2.png",
@@ -45,7 +45,7 @@
       "name": {
         "twitter:card": "summary_large_image",
         "twitter:title": "QuitGentle Smoking Tracker",
-        "twitter:description": "A calmer way to log cigarettes, ride out cravings, and see patterns without the shame spiral.",
+        "twitter:description": "A calmer way to log cigarettes, ride out cravings, and unlock optional weekly reviews and deeper patterns.",
         "twitter:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507-v2.png",
         "twitter:image:alt": "QuitGentle social preview with app icon, launch copy, and three app screens."
       }
@@ -72,7 +72,7 @@
         "og:type": "website",
         "og:site_name": "QuitGentle",
         "og:title": "QuitGentle Press and Media Kit",
-        "og:description": "QuitGentle press and media kit with product positioning, platform facts, approved screenshots, Sora references, and support contact details.",
+        "og:description": "QuitGentle press and media kit with product positioning, Premium 1.1 facts, approved screenshots, Sora references, and support contact details.",
         "og:url": "https://quitgentle.com/press/",
         "og:image": "https://quitgentle.com/assets/visuals/quitgentle-moments-strip.png",
         "og:image:alt": "QuitGentle calm daily moments visual."
@@ -80,7 +80,7 @@
       "name": {
         "twitter:card": "summary_large_image",
         "twitter:title": "QuitGentle Press and Media Kit",
-        "twitter:description": "Product positioning, launch facts, screenshots, and media assets for QuitGentle.",
+        "twitter:description": "Product positioning, Premium 1.1 facts, screenshots, and media assets for QuitGentle.",
         "twitter:image": "https://quitgentle.com/assets/visuals/quitgentle-moments-strip.png"
       }
     },
@@ -89,7 +89,7 @@
         "og:type": "website",
         "og:site_name": "QuitGentle",
         "og:title": "QuitGentle Support",
-        "og:description": "QuitGentle support help for installs, Cloud Sync, Apple Health / HealthKit, import and export, widgets, Apple Watch, and bug reports.",
+        "og:description": "QuitGentle support help for installs, Premium purchases, Restore Purchases, Cloud Sync, Apple Health / HealthKit, widgets, Apple Watch, and bug reports.",
         "og:url": "https://quitgentle.com/support/",
         "og:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507-v2.png",
         "og:image:alt": "QuitGentle social preview with app icon, launch copy, and three app screens."
@@ -97,7 +97,7 @@
       "name": {
         "twitter:card": "summary_large_image",
         "twitter:title": "QuitGentle Support",
-        "twitter:description": "Help for QuitGentle installs, sync, widgets, Apple Watch, exports, permissions, and bug reports.",
+        "twitter:description": "Help for QuitGentle installs, Premium purchases, Restore Purchases, sync, widgets, Apple Watch, exports, permissions, and bug reports.",
         "twitter:image": "https://quitgentle.com/assets/social/quitgentle-facebook-preview-20260507-v2.png"
       }
     },
@@ -269,20 +269,28 @@
       "Need help with privacy or sync?"
     ],
     "support/index.html": [
-      "Help for install issues, sync problems, widgets, Apple Watch, and support questions.",
+      "Help for install issues, Premium purchases, sync problems, widgets, Apple Watch, and support questions.",
       "Current public support channel",
-      "If this is urgent"
+      "If this is urgent",
+      "Purchases and Restore Purchases"
     ],
     "press/index.html": [
       "QuitGentle is calm smoking support for real quitting days.",
       "Media assets",
-      "Approved short copy"
+      "Approved short copy",
+      "Premium 1.1 facts"
     ],
     "legal/index.html": [
       "QuitGentle supports self-management. It is not medical care or emergency support.",
       "Terms of Use (EULA)",
       "What QuitGentle is not",
       "Questions about current scope"
+    ],
+    "index.html": [
+      "Optional Premium",
+      "Weekly Quit Review",
+      "Advanced Pattern Insights",
+      "Advanced Hotspot Insights"
     ]
   },
   "requiredLinkLabels": {

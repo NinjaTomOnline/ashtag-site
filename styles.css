@@ -681,6 +681,80 @@ main {
   box-shadow: 0 22px 48px rgba(0, 0, 0, 0.42);
 }
 
+
+.premium-section {
+  padding: 66px 0;
+  border-top: 1px solid rgba(231, 193, 118, 0.18);
+  border-bottom: 1px solid rgba(231, 193, 118, 0.18);
+  background:
+    radial-gradient(circle at 18% 12%, rgba(231, 193, 118, 0.15), transparent 34%),
+    linear-gradient(135deg, rgba(36, 26, 22, 0.96), rgba(14, 29, 25, 0.92)),
+    var(--panel-warm);
+}
+
+.premium-layout {
+  display: grid;
+  gap: 26px;
+}
+
+.premium-copy p {
+  max-width: 46rem;
+}
+
+.premium-copy p + p {
+  margin-top: 14px;
+}
+
+.premium-cards {
+  display: grid;
+  gap: 12px;
+}
+
+.premium-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 210px;
+  padding: 22px;
+  border: 1px solid rgba(231, 193, 118, 0.24);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(150deg, rgba(255, 247, 234, 0.1), rgba(255, 247, 234, 0.045)),
+    rgba(255, 247, 234, 0.055);
+  box-shadow: var(--shadow-soft);
+}
+
+.premium-card::before {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 4px;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold), var(--mint));
+}
+
+.premium-card span {
+  color: var(--gold-soft);
+  font-size: 0.74rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.premium-card h3 {
+  max-width: 15rem;
+  color: var(--cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.38rem;
+  line-height: 1.12;
+}
+
+.premium-card p {
+  color: #dfd0c1;
+  font-size: 0.94rem;
+  line-height: 1.52;
+}
+
 .ecosystem-section {
   padding: 64px 0;
   background:
@@ -1033,6 +1107,7 @@ code {
   }
 
   .rescue-grid,
+  .premium-cards,
   .ecosystem-showcase,
   .ecosystem-grid,
   .trust-grid,
@@ -1109,6 +1184,7 @@ code {
 
   .truth-layout,
   .patterns-layout,
+  .premium-layout,
   .trust-layout {
     grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
     align-items: start;
@@ -1120,6 +1196,10 @@ code {
 
   .ecosystem-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .premium-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .ecosystem-showcase {
